@@ -9,3 +9,5 @@ export PULSE_SERVER=tcp:$(grep nameserver /etc/resolv.conf | awk '{print $2}');
 ```
 
 ![Wild Rose](https://github.com/PumkinNymph/dotfiles/blob/master/images/Wild%20Rose.png)
+
+Credit for SideDecoration goes to @github/Avaq https://github.com/xmonad/xmonad/issues/152
