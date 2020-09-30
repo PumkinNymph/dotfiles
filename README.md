@@ -1,7 +1,7 @@
 # Wild Rose Dots
 
 add to following to ~/.bashrc or ~/.zshrc for xserver/pulseaudio support.  
-# x410
+
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
 export PULSE_SERVER=tcp:$(grep nameserver /etc/resolv.conf | awk '{print $2}');
 
