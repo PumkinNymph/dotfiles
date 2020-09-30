@@ -1,7 +1,7 @@
 # Wild Rose Dots
 
 add following to ~/.bashrc or ~/.zshrc for xserver/pulseaudio support when using WSL.  
-##see\
+## See\
 https://x410.dev/cookbook/wsl/using-x410-with-wsl2 \
 https://x410.dev/cookbook/wsl/enabling-sound-in-wsl-ubuntu-let-it-sing/
 
