@@ -12,4 +12,4 @@ https://x410.dev/cookbook/wsl/enabling-sound-in-wsl-ubuntu-let-it-sing/
 
 ![Wild Rose](https://github.com/PumkinNymph/dotfiles/blob/master/images/Wild%20Rose.png)
 
-Credit for SideDecoration goes to https://github.com/Avaq see https://github.com/xmonad/xmonad/issues/152
+Credit for SideDecoration goes to https://github.com/LSLeary see https://github.com/xmonad/xmonad/issues/152
