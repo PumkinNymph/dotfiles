@@ -1,6 +1,6 @@
 # Wild Rose Dots
 
-add following to ~/.bashrc or ~/.zshrc for xserver/pulseaudio support.  
+add following to ~/.bashrc or ~/.zshrc for xserver/pulseaudio support when using WSL.  
 
 
 ```
