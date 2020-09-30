@@ -1,1 +1,46 @@
-/home/jasmine/.xmobarrc
+Config { 
+
+-- Appearance
+	font 		=	"xft:FantasqueSansMono Nerd Font:size=10:regular:antialias=true"
+	, bgColor 	=	"#23241b"
+   	, fgColor	=	"#b4a6b3"
+   	, position	=	Top
+	, border	=	BottomB
+	, borderColor	=	"#904b5b"
+
+-- layout
+	, sepChar 	= "%"	-- delineator between plugin names and straight text
+	, alignSep	= "}{"	-- separator between left-right alignment
+ 	, template 	= "%dynnetwork%}%StdinReader%{%multicpu% %memory%"
+
+-- Plugins
+	, commands =
+-- workspces	
+	[ Run StdinReader
+ -- cpu activity monitor
+        , Run MultiCpu       [ "--template" , " ﬙ <total0>%"
+                             , "--Low"      , "50"         -- units: %
+                             , "--High"     , "85"         -- units: %
+                             , "--low"      , "#904b5b"
+                             , "--normal"   , "#904b5b"
+                             , "--high"     , "#904b5b"
+                             ] 10	
+-- memory usage monitor
+        , Run Memory         [ "--template" ,"  <usedratio>%"
+                             , "--Low"      , "20"        -- units: %
+                             , "--High"     , "90"        -- units: %
+                             , "--low"      , "#904b5b"
+                             , "--normal"   , "#904b5b"
+                             , "--high"     , "#904b5b"
+                             ] 10
+-- network activity monitor (dynamic interface resolution)
+        , Run DynNetwork     [ "--template" , "  <rx>kB/s"
+                             , "--Low"      , "1000"       -- units: B/s
+                             , "--High"     , "5000"       -- units: B/s
+                             , "--low"      , "#904b5b"
+                             , "--normal"   , "#904b5b"
+                             , "--high"     , "#904b5b"
+                             ] 10
+	]
+
+}
