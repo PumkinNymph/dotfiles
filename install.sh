@@ -34,4 +34,5 @@ kiss b liberation-fonts
 kiss i liberation-fonts
 addgroup jasmine video
 addgroup jasmine audio
-addgroup jasmine sudo
+addgroup jasmine wheel
+sed --in-place 's/^#\s*\(%wheel\s\+ALL=(ALL)\s\+ALL\)/\1/' /etc/sudoers
