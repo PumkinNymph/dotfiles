@@ -36,3 +36,4 @@ addgroup jasmine video
 addgroup jasmine audio
 addgroup jasmine wheel
 sed --in-place 's/^#\s*\(%wheel\s\+ALL=(ALL)\s\+ALL\)/\1/' /etc/sudoers
+mv /root/.profile /home/jasmine/.profile
