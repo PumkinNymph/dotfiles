@@ -30,6 +30,7 @@ kiss b eudev
 kiss i eudev
 passwd
 adduser jasmine
+kiss b xorg-server xinit xf86-input-libinput
 kiss b liberation-fonts
 kiss i liberation-fonts
 addgroup jasmine video
